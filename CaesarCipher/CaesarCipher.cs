@@ -12,8 +12,10 @@ namespace CaesarCipher
             {
                 int p=(int)c;
                 int k=p+(shiftKey%26);
+                //check if the letter is capital letter or not
                 if(p>=97 && p<123)
                 {
+                    //it will take back to in 26 word loop
                 if(k>122)
                 {
                     k=k-122+96;
